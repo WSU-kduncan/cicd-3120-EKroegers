@@ -33,9 +33,15 @@ $ sudo service docker start
 # DockerHub
 
 - Process to create public repo in DockerHub
+	- After making an account, you're taken through a guided creation process where you name a repo, provide a description and readme, and place it on DockerHub, ignoring all of the buttons that are asking you if you want to make it private.
 - How to authenticate with DockerHub via CLI using Dockerhub credentials
+	- Go to `Account Settings` then `Security` then generate an access token
+	- then on the command line you can use `docker login -u Username`
+	- then paste the key in place of the password
   - what credentials would you recommend providing?
+	- Access Token
 - How to push container to Dockerhub
+	- `docker push <hub-user>/<repo-name>:<tag>`
 
 # GitHub Actions
 
