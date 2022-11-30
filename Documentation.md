@@ -24,8 +24,11 @@ $ sudo service docker start
 ```
 
 - how to build the container
+	- After creating a Dockerfile, you can run `docker build -t servername` (`webserver` in my case)
 - how to run the container
+	- `docker run -d -p serverport:80 servername` (`3000` and `webserver` in my case)
 - how to view the project running in the container (open a browser...go to ip and port...)
+	- go to http://localhost:serverport/ (`3000` in my case)
 
 # DockerHub
 
