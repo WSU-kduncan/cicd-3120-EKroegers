@@ -47,9 +47,12 @@ $ sudo service docker start
 
 - Configuring GitHub Secrets
   - What secrets were set based on what info
+	- It is neccesary to set a secret for your username, password, and token for Docker
 - Behavior of GitHub workflow
   - what does it do and when
+	The workflow pushes a build of the image to docker after a changed Dockerfile is pushed to the github repo
   - what variables in workflow are custom to your project
+	- My own password, username, and token are specific to my repo and docker account, and would need to be changed if someone else were to implement this
 
 # Deployment
 
