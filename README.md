@@ -57,9 +57,15 @@ $ sudo service docker start
 # Deployment
 
 - Description of container restart script
+	- The script first stops the old webserver, removes the image from the local system, pulls a fresh image from Dockerhub, and then runs the new image (with a check to restart)
 - Setting up a webhook on the server
   - How you created you own listener
+	- Setup the listener on AWS to listen to the github url (with token)
   - How you installed the [webhook on GitHub](https://github.com/adnanh/webhook)
+	- Set up the json file on the external server, and had it listen to the repo
   - How to keep the webhook running if the instance is on
+	- Running the restart script detatched will persist so long as the instance is running
 - Description of Webhook task definition file
+	- The name of the hook, the command it will be executing, and the directory in which it works
 - Steps to set up a notifier in GitHub or DockerHub
+	- setup the listener to listen to the url in question (and token), and it will be activated when the provided event occurs
