@@ -3,7 +3,7 @@
 - what is the point of this project and what tools are used
 	- This project is used to familiarize ourselves with the tools of Github and Docker designed to make deployment and maintaining of webservers more convenient and efficient. This project also serves to familiarize ourselves with workflows, and the combination of these tools to have work automated in order to make the process of development more efficient.
 - Part 4 - Diagramming goes here
-[Workflow](workflow.png)
+![Workflow](workflow.png)
 
 # Run Project Locally
 
